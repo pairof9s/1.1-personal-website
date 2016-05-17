@@ -4,6 +4,13 @@
     <meta charset="utf-8">
     <title>D9 Website</title>
     <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+    <script>
+      var blink_speed = 1000; // every 1000 == 1 second, adjust to suit
+      var t = setInterval(function () {
+        var ele = document.getElementById('myBlinkingDiv');
+        ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
+      }, blink_speed);
+    </script>
   </head>
   <body>
 
@@ -17,6 +24,16 @@
       <div>
         <img src="stop.jpg" name="pic" onclick="window.document.pic.src='go.jpg';"/>
       </div>
-    
+    <hr>
+    <br>
+    <div class="blinkbox">
+      <div id="myBlinkingDiv">This is blinking!</div>
+    </div>
+    <hr>
+    <br>
+
+    <footer class="footer">
+      <img src="construct.gif" alt="notyet" />
+    </footer>
   </body>
 </html>

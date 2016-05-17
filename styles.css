@@ -26,3 +26,17 @@ body{
   font-size: 16px;
   font-weight: 300;
 }
+
+.blinkbox{
+  font-family: sans-serif;
+  font-variant: small-caps;
+  font-size: 48px;
+}
+
+footer{
+  margin: 50 px;
+  background-color: white;
+  height: 280px;
+  width: auto;
+  align-self: baseline;
+}
